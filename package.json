@@ -9,7 +9,7 @@
     "clean": "rm -rf build",
     "build": "tsc",
     "start": "node build",
-    "dev-server": "ts-node-dev --respawn --transpile-only --ignore node_modules src/index.ts ",
+    "server": "ts-node-dev --respawn --transpile-only --ignore node_modules src/index.ts ",
     "prettier:fix": "prettier --config .prettierrc.json --write src/**/**/*.ts",
     "migration:create": "npx sequelize migration:create --migrations-path src/database/migrations"
   },

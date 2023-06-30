@@ -18,7 +18,6 @@ const ListAppointmentsService = async ({
   endDate,
   userId
 }: Request): Promise<Response> => {
-  console.log(startDate, endDate);
   
   const { count, rows: appointments } = await Appointment.findAndCountAll({
     where: {

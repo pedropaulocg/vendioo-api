@@ -8,8 +8,8 @@ appointmentRoutes.get("/appointment", auth,AppointmenteController.listAppointmen
 
 appointmentRoutes.post("/appointment", auth,AppointmenteController.createAppointment);
 
-// appointmentRoutes.put("/products/:productId", auth, AppointmenteController.updateProduct)
+appointmentRoutes.put("/appointment/:appointmentId", auth, AppointmenteController.updateAppointment)
 
-// appointmentRoutes.delete("/products/:productId", auth, AppointmenteController.deleteProduct)
+appointmentRoutes.delete("/appointment/:appointmentId", auth, AppointmenteController.deleteAppointment)
 
 export default appointmentRoutes;
