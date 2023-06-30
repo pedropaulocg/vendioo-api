@@ -30,7 +30,7 @@ const auth = (req: Request, res: Response, next: NextFunction): void => {
     }
   } catch (e) {
     console.log(e);
-    throw new HTTPError(403, "Token invalido");
+    throw new HTTPError(403, "Token invalido. Faça o login novamente");
   }
 
   return next()
